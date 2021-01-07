@@ -7,3 +7,10 @@ endpoints:
       - statusCode: 200
         body:
           message: Hello from Mocki!
+  - path: /graphql
+    method: post
+    graphql:
+      mocks:
+        User:
+          id: 8db57b8f-be09-4e07-a1f6-4fb77d9b16e7
+          name: Machete
